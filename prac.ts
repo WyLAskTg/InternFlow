@@ -1,19 +1,3 @@
-type ApplicationStatus = 
-    "Applied" |
-    "OA Received" |
-    "OA Completed" |
-    "Interview Scheduled" |
-    "Offer" |
-    "Rejected" |
-    "Withdrawn";
-
-interface Application {
-    companyName: string;
-    position: string;
-    status: ApplicationStatus;
-    interviewTime?: string;
-}
-
 const applications: Application[] = [];
 
 function addApplication(application: Application): Application{
@@ -36,3 +20,25 @@ function example(companyName: string, position: string, status: ApplicationStatu
     // content
 }
 
+function getNumber(): number{
+    return 5;
+}
+
+interface ApplicationEvent {
+    applicationId: number;
+    eventType: ApplicationEventType;
+    eventTime: string;
+}
+
+const events: ApplicationEvent[] = [];
+
+let value: unknown;
+/*
+string / number / boolean -> typeof
+object (i.e. Error) -> instanceof
+*/
+
+const updates: Partial<Application> = {
+    status: "Interview",
+    interviewTime: "xxx"
+};
