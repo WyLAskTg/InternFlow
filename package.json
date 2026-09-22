@@ -1,0 +1,25 @@
+{
+  "name": "internflow",
+  "version": "1.0.0",
+  "description": "InternFlow is a lightweight internship application tracker for managing applications, recruiting stages, interviews, and application history.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WyLAskTg/InternFlow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/WyLAskTg/InternFlow/issues"
+  },
+  "homepage": "https://github.com/WyLAskTg/InternFlow#readme",
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  }
+}

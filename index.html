@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>InternFlow</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>InternFlow</h1>
+            <p>Manage your internship applications.</p>
+        </header>
+
+        <main>
+            <h2>Applications</h2>
+            <button id="add-application">Add Application</button>
+            <form id="application-form" hidden>
+                <label for="company-name">Company Name</label>
+                <input id="company-name"
+                       name="companyName"
+                       type="text"
+                       required
+                >
+
+                <label for="position">Position</label>
+                <input id="position"
+                       name="position"
+                       type="text"
+                       required
+                >
+
+                <button type="submit">Add</button>
+                <button id="cancel-application" type="button">Cancel</button>
+            </form>
+
+            <div id="application-list">
+            </div>
+        </main>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
